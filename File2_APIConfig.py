@@ -2,9 +2,9 @@ def build_api_config(model_name,**kwargs):
     base_config={
         "temperature":0.7,
         "max_tokens":100,
-        "stream":False
+        "stream":False,
+        "model":model_name
     }
-    base_config["model"]=model_name
     base_config.update(kwargs)
     return base_config
 
